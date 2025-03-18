@@ -62,5 +62,5 @@ Ce projet est sous licence **MIT** – Vous pouvez l'utiliser et le modifier lib
 ## 📩 Contact
 
 📧 **Email julesmukadi.dev@gmail.com**  
-📍 **Lien vers la démo**  
+📍 **Lien vers la démo https://academic-projet.netlify.app/**  
 
