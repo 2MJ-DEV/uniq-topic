@@ -1,159 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
-  </head>
-  <body
-    class="w-screen overflow-x-hidden text-zinc-800 dark:text-zinc-100 duration-300 bg-white dark:bg-zinc-950 relative"
-  >
-    <!-- Le header plus la navigation mobile et pc -->
-    <header
-      id="header"
-      class="fixed w-screen left-0 z-50 bg-white/80 lg:bg-transparent dark:bg-zinc-950/80 lg:dark:bg-transparent lg:backdrop-blur-none right-0 group p-3 px-8 lg:px-6 border-b lg:border-none lg:w-[75vw] lg:mx-auto border-dashed border-zinc-950/5 dark:border-white/5 duration-300 lg:top-4"
-    >
-      <!-- Nav overlay -->
 
-      <nav class="flex items-center justify-between">
-        <!-- logo officiel du site -->
-        <div class="">
-          <a
-            href="/index.html"
-            class="text-lg font-light flex gap-1 items-center"
-          >
-            <span class="h-max grid place-content-center">
-              <i class="bx bx-infinite text-4xl"></i>
-            </span>
-            <div class="hidden lg:block">
-              <span class="">logo</span>
-            </div>
-          </a>
-        </div>
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vite App</title>
+</head>
 
+<body
+  class="w-screen overflow-x-hidden text-zinc-800 dark:text-zinc-100 duration-300 bg-white dark:bg-zinc-950 relative">
+  <!-- Le header plus la navigation mobile et pc -->
+  <header id="header"
+    class="fixed w-screen left-0 z-50 bg-white/80 lg:bg-transparent dark:bg-zinc-950/80 lg:dark:bg-transparent lg:backdrop-blur-none right-0 group p-3 px-8 lg:px-6 border-b lg:border-none lg:w-[75vw] lg:mx-auto border-dashed border-zinc-950/5 dark:border-white/5 lg:top-4">
+    <!-- Nav overlay -->
+
+    <nav class="flex items-center justify-between">
+      <!-- logo officiel du site -->
+      <div class="">
+        <a href="/index.html" class="text-lg font-light flex gap-1 items-center">
+          <span class="h-max grid place-content-center">
+            <i class="bx bx-infinite text-4xl"></i>
+          </span>
+          <div class="hidden lg:block">
+            <span class="">logo</span>
+          </div>
+        </a>
+      </div>
+
+      <div class="flex items-center gap-2">
         <div class="flex items-center gap-2">
-          <div class="flex items-center gap-2">
-            <!-- Menu ordinateur -->
-            <button id="toggleButton" class="p-2 pl-4 hover:cursor-pointer">
-              <svg
-                id="moonIcon"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke-width="1.5"
-                stroke="currentColor"
-                class="size-5 hover:text-blue-950 duration-300 hover:rotate-12"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M21.752 15.002A9.72 9.72 0 0 1 18 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 0 0 3 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 0 0 9.002-5.998Z"
-                />
-              </svg>
+          <!-- Menu ordinateur -->
+          <button id="toggleButton" class="p-2 pl-4 hover:cursor-pointer">
+            <svg id="moonIcon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+              stroke="currentColor" class="size-5 hover:text-blue-950 duration-300 hover:rotate-12">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M21.752 15.002A9.72 9.72 0 0 1 18 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 0 0 3 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 0 0 9.002-5.998Z" />
+            </svg>
 
-              <svg
-                id="sunIcon"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke-width="1.5"
-                stroke="currentColor"
-                class="size-5 hover:text-blue-600 duration-300 hover:rotate-12"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M12 3v2.25m6.364.386-1.591 1.591M21 12h-2.25m-.386 6.364-1.591-1.591M12 18.75V21m-4.773-4.227-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0Z"
-                />
-              </svg>
-            </button>
-            <!-- Btn action -->
-            <div class="lg:flex hidden flex-col gap-4 lg:flex-row items-center">
-              <a
-                href="/src/pages/login.html"
-                class="p-1 px-6 dark:text-white/70 font-light dark:hover:text-white hover:bg-zinc-100 dark:hover:bg-white/5 text-sm duration-300 rounded-lg active:scale-90"
-              >
-                Log in
-              </a>
-              <a
-                href="/src/pages/register.html"
-                class="p-1 px-6 border border-zinc-100 dark:border-zinc-700 dark:text-white/70 font-light dark:hover:text-white hover:bg-zinc-100 dark:hover:bg-white/5 text-sm duration-300 rounded-lg active:scale-90"
-              >
-                <span>Register</span>
-              </a>
-            </div>
-          </div>
-
-          <!-- umburger menu -->
-          <div class="flex lg:hidden">
-            <button
-              id="menu-btn"
-              aria-label="open menu"
-              class="btn variant-ghost sz-md icon-only relative z-20 -mr-2.5 block cursor-pointer lg:hidden hover:bg-zinc-950/5 p-2 rounded-full"
-            >
-              <svg
-                class="text-title absolute inset-0 m-auto size-6 -rotate-180 scale-0 opacity-0 transition-[transform,opacity] duration-300 group-data-[state=active]:rotate-0 group-data-[state=active]:scale-100 group-data-[state=active]:opacity-100"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke-width="1.5"
-                stroke="currentColor"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M6 18 18 6M6 6l12 12"
-                ></path>
-              </svg>
-            </button>
+            <svg id="sunIcon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+              stroke="currentColor" class="size-5 hover:text-blue-600 duration-300 hover:rotate-12">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M12 3v2.25m6.364.386-1.591 1.591M21 12h-2.25m-.386 6.364-1.591-1.591M12 18.75V21m-4.773-4.227-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0Z" />
+            </svg>
+          </button>
+          <!-- Btn action -->
+          <div class="lg:flex hidden flex-col gap-4 lg:flex-row items-center">
+            <a href="/src/pages/login.html"
+              class="p-1 px-6 dark:text-white/70 font-light dark:hover:text-white hover:bg-zinc-100 dark:hover:bg-white/5 text-sm duration-300 rounded-lg active:scale-90">
+              Log in
+            </a>
+            <a href="/src/pages/register.html"
+              class="p-1 px-6 border border-zinc-100 dark:border-zinc-700 dark:text-white/70 font-light dark:hover:text-white hover:bg-zinc-100 dark:hover:bg-white/5 text-sm duration-300 rounded-lg active:scale-90">
+              <span>Register</span>
+            </a>
           </div>
         </div>
-      </nav>
-    </header>
 
-    <!-- Le contenu de la page -->
-    <main class="relative z-20">
-      <!-- Le contenue principal ici -->
-
-      <!-- La hero section ici -->
-      <section class="flex items-center justify-center h-screen mx-auto px">
-        <div class="grid grid-cols-2 p-10 items-center mt-20 gap-6">
-          <div class="flex flex-col items-center gap-4">
-            <div class="flex flex-col items-center gap-4 mb-7">
-              <h1 class="font-medium text-4xl">
-                Bienvenue sur la documentation <br />
-                officielle de Uniq-Topic !
-              </h1>
-              <p
-                class="mt-3 text-zinc-500 lg:w-[40vw] text-center mx-auto lg:text-balance"
-              >
-                Cette plateforme web permet la soumission des sujets académiques
-                avec une détection automatique des doublons. Que vous soyez
-                développeur, utilisateur ou administrateur, cette documentation
-                vous guidera à travers toutes les fonctionnalités essentielles
-                pour exploiter pleinement Uniq-Topic.
-              </p>
-            </div>
-            <div class="">
-              <a
-                href="#"
-                class="text-black border border-zinc-100 dark:border-zinc-700 dark:text-white rounded-full px-5 py-2 dark:hover:text-white hover:bg-zinc-100 dark:hover:bg-white/5 duration-300"
-                >Commencer</a
-              >
-              <a href="#" class="bg-zinc-200 text-black rounded-full px-5 py-2 hover:bg-zinc-50 dark:hover:bg-zinc-100 duration-300"
-                >documentation</a
-              >
-            </div>
-          </div>
-          <div
-                class="bg-gradient-to-b from-zinc-950/5 dark:from-white/5 to-transparent border border-l border-r border-zinc-950/5 dark:border-white/5 h-48 lg:h-100 lg:w-150 rounded-2xl"
-              >
-              <!-- <img src="src/Assets/Imgs-back/Img-1.jpg" class="p-4 lg:h-90" alt=""> -->
+        <div class="flex lg:hidden">
+          <button id="menu-btn" aria-label="open menu"
+            class="btn variant-ghost sz-md icon-only relative z-20 -mr-2.5 block cursor-pointer lg:hidden hover:bg-zinc-950/5 p-2 rounded-full">
+            <svg
+              class="text-title absolute inset-0 m-auto size-6 -rotate-180 scale-0 opacity-0 transition-[transform,opacity] duration-300 group-data-[state=active]:rotate-0 group-data-[state=active]:scale-100 group-data-[state=active]:opacity-100"
+              xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12"></path>
+            </svg>
+          </button>
         </div>
-      </section>
-    </main>
+      </div>
+    </nav>
+  </header>
 
-    <script type="module" src="/src/main.js"></script>
-  </body>
+  <!-- Le contenu de la page -->
+  <main class="relative z-20">
+    <!-- Le contenue principal ici -->
+
+    <!-- La hero section ici -->
+    <section class="flex items-center justify-center h-screen mx-auto px">
+      <div class="grid lg:grid-cols-2 p-10 items-center mt-20 gap-6">
+        <div class="flex flex-col items-center gap-4">
+          <div class="flex flex-col items-center gap-4 mb-7">
+            <h1 class="font-medium text-4xl">
+              Bienvenue sur la documentation <br />
+              officielle de Uniq-Topic !
+            </h1>
+            <p class="mt-3 text-zinc-500 lg:w-[40vw] text-center mx-auto lg:text-balance">
+              Cette plateforme web permet la soumission des sujets académiques
+              avec une détection automatique des doublons. Que vous soyez
+              développeur, utilisateur ou administrateur, cette documentation
+              vous guidera à travers toutes les fonctionnalités essentielles
+              pour exploiter pleinement Uniq-Topic.
+            </p>
+          </div>
+          <div class="">
+            <a href="#"
+              class="text-black border border-zinc-100 dark:border-zinc-700 dark:text-white rounded-full px-5 py-2 dark:hover:text-white hover:bg-zinc-100 dark:hover:bg-white/5 duration-300">Commencer</a>
+            <a href="#"
+              class="bg-zinc-200 text-black rounded-full px-5 py-2 hover:bg-zinc-50 dark:hover:bg-zinc-100 duration-300">documentation</a>
+          </div>
+        </div>
+        <div
+          class="bg-gradient-to-b from-zinc-950/5 dark:from-white/5 to-transparent border border-l border-r border-zinc-950/5 dark:border-white/5 h-48 lg:h-100 lg:w-150 rounded-2xl">
+          <!-- <img src="src/Assets/Imgs-back/Img-1.jpg" class="p-4 lg:h-90" alt=""> -->
+        </div>
+    </section>
+
+    <!-- == Section de présentation == -->
+    <section class="">
+
+    </section>
+  </main>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+
 </html>
