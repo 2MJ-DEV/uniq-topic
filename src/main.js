@@ -30,7 +30,7 @@ if (isDarkMode) {
 toggleButton.addEventListener('click', () => {
 	html.classList.toggle('dark')
 
-	// Enregistrer le mode
+	// Enregistrer le mode 
 	localStorage.setItem('darkMode', html.classList.contains('dark'))
 
 	// Afficher/masquer les icônes
@@ -42,3 +42,26 @@ toggleButton.addEventListener('click', () => {
 		moonIcon.style.display = 'block'
 	}
 })
+
+
+
+// Path pour la gestion d'ouverture et fermeture du dropdown
+const dropdownButton = document.getElementById("dropdownButton");
+const dropdownMenu = document.getElementById("dropdownMenu");
+const arrowIcon = document.getElementById("arrowIcon");
+
+dropdownButton.addEventListener("click", (event) => {
+	event.stopPropagation(); // Empêche la fermeture immédiate
+	dropdownMenu.classList.toggle("opacity-0");
+	dropdownMenu.classList.toggle("scale-95");
+	dropdownMenu.classList.toggle("invisible");
+	arrowIcon.classList.toggle("rotate-180");
+});
+
+// Fermer le menu en cliquant à l'extérieur
+document.addEventListener("click", (event) => {
+	if (!dropdownButton.contains(event.target) && !dropdownMenu.contains(event.target)) {
+		dropdownMenu.classList.add("opacity-0", "scale-95", "invisible");
+		arrowIcon.classList.remove("rotate-180");
+	}
+});
