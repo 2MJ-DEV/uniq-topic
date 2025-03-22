@@ -65,3 +65,4 @@ document.addEventListener("click", (event) => {
 		arrowIcon.classList.remove("rotate-180");
 	}
 });
+
