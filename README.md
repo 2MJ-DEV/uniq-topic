@@ -1,66 +1,67 @@
-# 📝 Uniq-Topic
+# 📚 Academic Topics Platform
 
-**Uniq-Topic** est une plateforme web permettant la soumission de sujets académiques avec une détection automatique des doublons. Grâce à une analyse de similarité, elle empêche la soumission de sujets trop proches les uns des autres, garantissant ainsi une meilleure diversité des propositions.
+**Plateforme web de soumission de sujets académiques avec détection de similarité**
 
----
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+[![Node.js](https://img.shields.io/badge/Node.js-18%2B-green)](https://nodejs.org/)
+[![React](https://img.shields.io/badge/React-18-blue)](https://react.dev/)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-3.3-%2338B2AC)
 
-## 📌 Fonctionnalités principales
+Plateforme web moderne permettant la soumission et la vérification de sujets académiques contre les doublons, construite avec une architecture full-stack JavaScript.
 
-✅ **Soumission de sujets académiques**  
-✅ **Détection automatique des doublons** (via analyse de similarité)  
-✅ **Affichage des sujets acceptés**  
-✅ **Documentation intégrée expliquant le fonctionnement**  
-✅ **(Optionnel) Interface administrateur pour la gestion des sujets**  
-
----
-
-## 📂 Structure des pages
-
-| Page | Description |
-|------|------------|
-| **Accueil** | Présentation de la plateforme et documentation sur son fonctionnement |
-| **Soumission de sujet** | Formulaire permettant d’envoyer un sujet pour validation |
-| **Liste des sujets** | Affichage des sujets déjà acceptés |
-| **(Optionnel) Interface Admin** | Gestion des sujets soumis, suppression et statistiques |
+![Interface Demo](https://via.placeholder.com/800x400.png?text=UI+Preview) *(Screenshot)*
 
 ---
 
-## 🚀 Installation et Exécution locale
+## 🚀 Fonctionnalités
 
-1. **Cloner le projet**  
-   ```sh
-   git clone https://git@github.com:2MJ-DEV/uniq-topic.git
-   cd uniq-topic
-   ```
-   ```dep
-   npm install
-   ```
-   ```preview
-   npm run dev
-### 📌 Évolutions futures
-
-- 📊 Intégrer des statistiques sur les sujets soumis  
-- 🌍 Ajouter la prise en charge de plusieurs langues  
+- **Interface utilisateur responsive** avec Tailwind CSS
+- **API REST** avec Node.js/Express
+- **Analyse de similarité** TF-IDF/Cosinus
+- **Système d'authentification** JWT
+- **Base de données** MongoDB/Mongoose
+- **Recherche en temps réel** avec Elasticsearch
 
 ---
 
-## 🛠️ Technologies utilisées
+## 🛠 Stack Technique
 
-- **Backend :** Firebase Functions (Node.js)  
-- **Base de données :** Firestore  
-- **Frontend :** React.js / Tailwind CSS  
-- **Hébergement :** Firebase Hosting  
+### Frontend
+- **Framework** : Vite
+- **Styling** : Tailwind CSS + Headless UI
+- **State Management** : 
+- **Formulaires** :
+- **Visualisation** : 
+
+### Backend
+- **Core** : Node.js + Express.js
+- **NLP** : Natural.js / WinkJS (ou microservice Python)
+- **Base de données** : MongoDB + Mongoose ODM
+- **Recherche texte** : Elasticsearch
+- **Authentification** : 
+
+### DevOps
+- **Conteneurisation** : 
+- **CI/CD** : GitHub Actions
+- **Monitoring** :
 
 ---
 
-## 📜 Licence
+## ⚙️ Installation
 
-Ce projet est sous licence **MIT** – Vous pouvez l'utiliser et le modifier librement.  
+1. **Cloner le dépôt**
+```bash
+git clone https://github.com/Installer les dépendances
+# Backend
+cd uniq-topic
+npm install
 
----
+# Frontend
+cd ../uniq-topic
+npm install
 
-## 📩 Contact
+# Dans /backend
+npm run dev
 
-📧 **Email julesmukadi.dev@gmail.com**  
-📍 **Lien vers la démo https://academic-projet.netlify.app/**  
-
+# Dans /frontend (nouveau terminal)
+npm run dev
