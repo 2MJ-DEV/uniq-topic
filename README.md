@@ -5,7 +5,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 [![Node.js](https://img.shields.io/badge/Node.js-18%2B-green)](https://nodejs.org/)
 [![React](https://img.shields.io/badge/React-18-blue)](https://react.dev/)
-![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-3.3-%2338B2AC)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-4-%2338B2AC)
 
 Plateforme web moderne permettant la soumission et la vérification de sujets académiques contre les doublons, construite avec une architecture full-stack JavaScript.
 
