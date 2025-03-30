@@ -12,7 +12,7 @@
     class="w-screen overflow-x-hidden text-zinc-800 dark:text-zinc-100 duration-300 bg-white dark:bg-zinc-950 relative">
     <!-- == Le header & la navigation mobile et pc == -->
     <header id="header"
-        class="fixed min-w-screen left-0 z-50 bg-white/80 lg:bg-transparent dark:bg-zinc-950/80 lg:dark:bg-transparent lg:backdrop-blur-none right-0 group p-3 px-8 border-b lg:w-[75vw] lg:mx-auto border-solid border-zinc-950/5 dark:border-zinc-700 h-16">
+        class="fixed min-w-screen left-0 z-50 bg-white lg:backdrop-blur-none right-0 group p-3 px-8 border-b lg:w-[75vw] lg:mx-auto border-solid border-zinc-950/5 h-16">
         <!-- == Superposition de navigation == -->
 
         <nav class="flex items-center justify-between">
@@ -31,32 +31,6 @@
             <div class="flex items-center gap-2">
                 <div class="flex items-center gap-2">
                     <!-- == Menu ordinateur == -->
-                    <button id="toggleButton" class="p-2 pl-4 hover:cursor-pointer">
-                        <svg id="moonIcon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                            stroke-width="1.5" stroke="currentColor"
-                            class="size-5 hover:text-blue-950 duration-300 hover:rotate-12">
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                                d="M21.752 15.002A9.72 9.72 0 0 1 18 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 0 0 3 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 0 0 9.002-5.998Z" />
-                        </svg>
-
-                        <svg id="sunIcon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                            stroke-width="1.5" stroke="currentColor"
-                            class="size-5 hover:text-blue-600 duration-300 hover:rotate-12">
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                                d="M12 3v2.25m6.364.386-1.591 1.591M21 12h-2.25m-.386 6.364-1.591-1.591M12 18.75V21m-4.773-4.227-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0Z" />
-                        </svg>
-                    </button>
-
-                    <!-- == bouton de notification == -->
-                    <button id="toggleButton" class="p-2 pl-4 hover:cursor-pointer">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                            stroke="currentColor" class="size-5">
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                                d="M14.857 17.082a23.848 23.848 0 0 0 5.454-1.31A8.967 8.967 0 0 1 18 9.75V9A6 6 0 0 0 6 9v.75a8.967 8.967 0 0 1-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 0 1-5.714 0m5.714 0a3 3 0 1 1-5.714 0" />
-                        </svg>
-
-                    </button>
-
                     <div class="p-2 pl-4 flex justify-center items-center gap-2 hover:cursor-pointer">
                         <a href="#">
                             <img src="../Assets/Imgs-back/Img-1.jpg" alt="Profile" class="w-8 h-8 rounded-full" />
@@ -109,6 +83,17 @@
                                         </svg>
 
                                         Submit a topic
+                                    </a>
+
+                                    <a href="submitSubject.html"
+                                        class="flex items-center gap-2 hover:outline outline-zinc-100 rounded-lg px-4 py-2 text-sm text-gray-500  hover:text-gray-700 dark:outline-zinc-700 dark:text-gray-400  dark:hover:text-gray-300  hover:outline-zinc-100 dark:hover:outline-zinc-700 hover:outline-offset-4 transition-all duration-300"
+                                        role="menuitem"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                                            class="size-5">
+                                            <path stroke-linecap="round" stroke-linejoin="round"
+                                                d="M14.857 17.082a23.848 23.848 0 0 0 5.454-1.31A8.967 8.967 0 0 1 18 9.75V9A6 6 0 0 0 6 9v.75a8.967 8.967 0 0 1-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 0 1-5.714 0m5.714 0a3 3 0 1 1-5.714 0" />
+                                        </svg>
+
+                                        Notification
                                     </a>
 
                                     <form method="POST" action="#">
@@ -179,6 +164,15 @@
         <section class="p-10 sm:ml-64">
             <!-- ============= Formulaire de modification des info compte ============ -->
             <div class="mt-4">
+                <div class="border border-zinc-950/5 p-4 rounded-lg bg-blue-100 gap-2">
+                    <div class="flex gap-4">
+                        <svg class="size-6" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 48 48">
+<path fill="#ffeb3b" d="M24,6c0.18,0,0.626,0.049,0.893,0.504l19.968,34.005c0.249,0.424,0.111,0.795,0.006,0.978	C44.778,41.641,44.513,42,43.968,42H4.032c-0.546,0-0.81-0.359-0.898-0.514c-0.105-0.183-0.244-0.554,0.006-0.978L23.107,6.504	C23.374,6.049,23.82,6,24,6"></path><circle cx="24" cy="37" r="2" fill="#455a64"></circle><polygon fill="#455a64" points="25,32 23,32 22,17 22,16 26,16 26,17"></polygon><path fill="#607d8b" d="M24,7l0.03,0.01L43.968,41L4.002,41.015l19.966-34.01C23.971,7.004,23.983,7,24,7 M24,4	c-1.017,0-2.034,0.497-2.617,1.491L1.415,39.496C0.241,41.494,1.697,44,4.032,44h39.936c2.335,0,3.791-2.506,2.617-4.504	L26.617,5.491C26.034,4.497,25.017,4,24,4L24,4z"></path>
+</svg>
+                        <h2 class="font-semibold">Read it carefully</h2>
+                    </div>
+                    <p>Before filling in teh form, make sure you have everything you need. Make sure you already have the subject of th project and the fild of study. Once the form has been submitted, the Faculty will proceed with the allocation of directors.</p>
+                </div>
                 <form action="" method="post">
                     <div class="border p-4 mt-4 rounded-lg border-zinc-100 dark:border-zinc-900">
                         <h1 class="mb-3">Please submit your topic here</h1>

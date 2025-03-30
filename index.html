@@ -9,10 +9,10 @@
 </head>
 
 <body
-  class="w-screen overflow-x-hidden text-zinc-800 dark:text-zinc-100 duration-300 bg-white dark:bg-zinc-950 relative">
+  class="w-screen overflow-x-hidden text-black relative">
   <!-- Le header plus la navigation mobile et pc -->
   <header id="header"
-    class="fixed min-w-screen left-0 z-50 bg-white/80 lg:bg-transparent dark:bg-zinc-950/80 lg:dark:bg-transparent lg:backdrop-blur-none right-0 group p-3 px-8 lg:px-6 border-b lg:border-none lg:w-[75vw] lg:mx-auto border-solid border-zinc-950/5 dark:border-zinc-700 lg:top-4">
+    class="fixed w-screen lg:block left-0 z-50 bg-white/80 lg:bg-transparent lg:backdrop:blur-none right-0 group p-3 px-8 lg:px-6 lg:w-[95vw] lg:mx-auto">
     <!-- Nav overlay -->
 
     <nav class="flex items-center justify-between">
@@ -22,52 +22,16 @@
           <span class="h-max grid place-content-center">
             <i class="bx bx-infinite text-4xl"></i>
           </span>
-          <div class="hidden lg:block">
-            <span class="">logo</span>
+          <div class="flex gap-2 justify-center items-center">
+            <img src="src/Assets/logoIpsum.jpg" alt="" class="h-11 w-11 rounded-full border border-slate-100">
+            <span class=""></span>
           </div>
         </a>
       </div>
 
-      <div class="flex items-center gap-2">
-        <div class="flex items-center gap-2">
-          <!-- Menu ordinateur -->
-          <button id="toggleButton" class="p-2 pl-4 hover:cursor-pointer">
-            <svg id="moonIcon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-              stroke="currentColor" class="size-5 hover:text-blue-950 duration-300 hover:rotate-12">
-              <path stroke-linecap="round" stroke-linejoin="round"
-                d="M21.752 15.002A9.72 9.72 0 0 1 18 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 0 0 3 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 0 0 9.002-5.998Z" />
-            </svg>
-
-            <svg id="sunIcon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-              stroke="currentColor" class="size-5 hover:text-blue-600 duration-300 hover:rotate-12">
-              <path stroke-linecap="round" stroke-linejoin="round"
-                d="M12 3v2.25m6.364.386-1.591 1.591M21 12h-2.25m-.386 6.364-1.591-1.591M12 18.75V21m-4.773-4.227-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0Z" />
-            </svg>
-          </button>
-          <!-- Btn action -->
-          <div class="lg:flex hidden flex-col gap-4 lg:flex-row items-center">
-            <a href="/src/pages/login.html"
-              class="p-1 px-6 dark:text-white/70 font-light dark:hover:text-white hover:bg-zinc-100 dark:hover:bg-white/5 text-sm duration-300 rounded-lg active:scale-90">
-              Log in
-            </a>
-            <a href="/src/pages/register.html"
-              class="p-1 px-6 border border-zinc-100 dark:border-zinc-700 dark:text-white/70 font-light dark:hover:text-white hover:bg-zinc-100 dark:hover:bg-white/5 text-sm duration-300 rounded-lg active:scale-90">
-              <span>Register</span>
-            </a>
-          </div>
-        </div>
-
-        <div class="flex lg:hidden">
-          <button id="menu-btn" aria-label="open menu"
-            class="btn variant-ghost sz-md icon-only relative z-20 -mr-2.5 block cursor-pointer lg:hidden hover:bg-zinc-950/5 p-2 rounded-full">
-            <svg
-              class="text-title absolute inset-0 m-auto size-6 -rotate-180 scale-0 opacity-0 transition-[transform,opacity] duration-300 group-data-[state=active]:rotate-0 group-data-[state=active]:scale-100 group-data-[state=active]:opacity-100"
-              xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-              stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12"></path>
-            </svg>
-          </button>
-        </div>
+      <div class="flex justify-between items-center gap-4">
+        <a href="src/pages/login.html" class="p-3 lg:p-2 flex items-center justify-center lg:px-10 hover:bg-zinc-950/5 rounded-full active:scale-90 text-sm duration-300 w-full lg:w-max font-light">Sign-in</a>
+        <a href="#" class="p-3 lg:p-2 border border-zinc-950/5 flex items-center justify-center lg:px-10 hover:bg-zinc-950/5 rounded-full active:scale-90 text-sm duration-300 w-full lg:w-max font-light">Register</a>
       </div>
     </nav>
   </header>
@@ -77,60 +41,24 @@
     <!-- Le contenue principal ici -->
 
     <!-- La hero section ici -->
-    <section class="flex items-center justify-center h-screen mx-auto px">
-      <div class="grid lg:grid-cols-2 p-10 items-center mt-20 gap-6">
-        <div class="flex flex-col items-center gap-4">
-          <div class="flex flex-col items-center gap-4 mb-7">
-            <h1 class="font-medium text-4xl">Protégez votre travail académique
-            </h1>
-            <p class="mt-3 text-zinc-500 lg:w-[40vw] text-center mx-auto lg:text-balance">
-              Vérifiez instantanément l'originalité de vos sujets de recherche et évitez les doublons grâce à notre technologie
-              avancée.
-            </p>
-          </div>
-          <div class="">
-            <a href="src/pages/login.html"
-              class="text-black border border-zinc-100 dark:border-zinc-700 dark:text-white rounded-full px-5 py-2 dark:hover:text-white hover:bg-zinc-100 dark:hover:bg-white/5 duration-300">
-              Soumettre un sujet</a>
-            <input type="search" name="" placeholder="Vérifier un doublon" class="bg-zinc-200 text-black rounded-full px-5 py-2 hover:bg-zinc-50 dark:hover:bg-zinc-100 duration-300" id="">
-          </div>
-        </div>
-        <div
-          class="bg-gradient-to-b from-zinc-950/5 dark:from-white/5 to-transparent border border-l border-r border-zinc-950/5 dark:border-white/5 h-48 lg:h-100 lg:w-150 rounded-2xl">
-          <!-- <img src="src/Assets/Imgs-back/Img-1.jpg" class="p-4 lg:h-90" alt=""> -->
-        </div>
-    </section>
-
-
-    <section class="">
-      <div class="">
-        <div class="">
-          <h2>Fonctionnalité clé</h2>
-        </div>
-        <div class="">
-          <div class="">
-            <div class=""><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
-              class="size-6">
-              <path stroke-linecap="round" stroke-linejoin="round"
-                d="m6.75 7.5 3 2.25-3 2.25m4.5 0h3m-9 8.25h13.5A2.25 2.25 0 0 0 21 18V6a2.25 2.25 0 0 0-2.25-2.25H5.25A2.25 2.25 0 0 0 3 6v12a2.25 2.25 0 0 0 2.25 2.25Z" />
-            </svg>
-</div>
-            <div class="">
-              <h2>Vérification algorithme</h2>
-              <p>Notre algorithme analyse votre sujet en temps réel parmi des milliers de publications
-</p>
-            </div>
-          </div>
-          <div class=""></div>
+    <section class="h-max lg:[85vw] mx-auto p-5 lg:p-0 grid gap-5 relative top-3 lg:top-28 mb-12 lg:mb-52">
+      <div class="flex flex-col gap-4 mt-20 justify-center items-center">
+        <h1 class="text-4xl lg:text-7xl text-center font-semibold bg-gradient-to-bl from-zinc-800 lg:leading-20 to-zinc-950 text-balance bg-clip-text text-transparent">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem ullam quod rerum culpa adipisci natus vitae earum</h1>
+        <p class="mt-4 text-zinc-500 lg:w-[40vw] text-center mx-auto lg:text-balance">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere nisi quod dolore commodi cupiditate reprehenderit atque architecto reiciendis corporis. Laborum inventore cupiditate iste quae odit eveniet atque quia beatae voluptatem!</p>
+        <div class="flex flex-col w-[80vw] lg:w-full lg:flex-row justify-center items-center gap-4 mt-10">
+          <a href="#" class="p-3 lg:p-2 border border-zinc-950/5 flex items-center justify-center lg:px-10 hover:bg-zinc-950/5 rounded-full active:scale-90 text-sm duration-300 w-full lg:w-max font-light"><span>start for free</span></a>
+          <a href="#" class="p-3 lg:p-2 text-sm bg-gradient-to-b from-blue-500 via-blue-600 to-blue-600 font-light hover:bg-blue-500 ring-1 ring-white/10 text-white rounded-full hover:shadow-blue-600/70 w-full lg:w-max lg:px-10 border border-zinc-950/5 flex justify-center duration-500 active:scale-90 shadow-xl lg:shadow-2xl shadow-blue-600/10 group-last:shadow-blue-600/30"><span>docs</span></a>
         </div>
       </div>
     </section>
 
     <!-- == Section de présentation == -->
-    <section class="">
+    <section class="h-max lg:[85vw] mx-auto">
 
     </section>
   </main>
+
+  <footer></footer>
 
   <script type="module" src="/src/main.js"></script>
 </body>
