@@ -3,6 +3,15 @@ import tailwindcss from '@tailwindcss/vite';
 import { resolve } from 'path'; // Import de resolve depuis path
 
 export default defineConfig({
+  theme: {
+    extend: {
+      fontFamily: {
+        sans: ['Roboto', 'sans-serif'], // Google Font
+        openSans: ['Open Sans', 'sans-serif'], // Google Font
+        ydSummer: ['YDSummerLight', 'sans-serif'], // Police locale
+      },
+    },
+  },
   plugins: [
     tailwindcss(),
   ],

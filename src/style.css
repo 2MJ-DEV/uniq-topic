@@ -1,3 +1,11 @@
 @import "tailwindcss";
 
+@font-face {
+    font-family: 'YDSummerLight';
+    src: url('./Assets/fonts/YDSummerLight.woff2') format('woff2'),
+        url('./Assets/fonts/YDSummerLight.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 @custom-variant dark (&:where(.dark, .dark *));
