@@ -66,37 +66,3 @@ document.addEventListener("click", (event) => {
 	}
 });
 
-
-
-
- import { db } from "../firebase.js";
-  import { collection, addDoc } from "firebase/firestore";
-
-  // Sélectionnez le formulaire
-  const form = document.querySelector("form");
-
-  // Ajoutez un gestionnaire d'événements pour l'envoi du formulaire
-  form.addEventListener("submit", async (e) => {
-    e.preventDefault(); // Empêche le rechargement de la page
-
-    // Récupérez les données du formulaire
-    const fullname = document.getElementById("fullname").value;
-    const domain = document.getElementById("domain").value;
-    const subject = document.getElementById("subject").value;
-
-    try {
-      // Ajoutez les données à Firestore
-      const docRef = await addDoc(collection(db, "submittedSubjects"), {
-        fullname,
-        domain,
-        subject,
-        timestamp: new Date(), // Ajoutez un horodatage
-      });
-
-      alert("Sujet soumis avec succès ! ID du document : " + docRef.id);
-      form.reset(); // Réinitialisez le formulaire
-    } catch (error) {
-      console.error("Erreur lors de l'enregistrement : ", error);
-      alert("Une erreur s'est produite lors de la soumission.");
-    }
-  });
